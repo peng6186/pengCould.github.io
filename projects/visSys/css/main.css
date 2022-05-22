@@ -1,0 +1,76 @@
+/**
+*  This file is the CSS file for cs178 final project
+*  major uesed CSS Flexbox to arrange the page for diff component
+*
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ 
+    /* background-color: gray; */
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 900px;
+    background-color: orange;
+    margin: 60px auto;
+
+}
+
+.title{
+    width:1200px;
+    height: 100px;
+    background-color: #f4f4f4;
+    text-align: center;
+    /* padding-top: 400px; */
+}
+
+.graph-body{
+    width: 1200px;
+    height: 800px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+.geo-map{
+    width: 600px;
+    height: 800px;
+    background-color: yellow;
+    position: relative;
+   
+}
+
+#reset-btn{
+    position: absolute;
+    top: 70px;
+    left: 230px;
+}
+
+.charts{
+    width: 600px;
+    height: 800px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-chart{
+    width: 600px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.bottom-chart{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: pink;
+
+}

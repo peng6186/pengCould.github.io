@@ -1,0 +1,19 @@
+/**
+* This file is to style map
+*
+*/
+
+.district{
+    stroke: lightgray;
+}
+
+.hover{
+    stroke: #991f1f;
+    opacity: 0.8;
+    stroke-width: 5; 
+}
+
+.clicked{
+    stroke-width: 10;
+    stroke: black;
+}

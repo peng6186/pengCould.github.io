@@ -16,6 +16,22 @@ body{
 
 }
 
+/* set logo font embedded with bg img */
+.logo {
+    background-image: url(images/space.jpeg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* site-name */
+/* #site-name {
+    background-image: url(images/stars.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
 img{
     max-width: 100%;
 }
@@ -97,9 +113,38 @@ ul{
     /* white-space: nowrap; */
 }
 
-.header img{
-    max-width: 300px;
+#profile-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-image: url(./images/kakaxi.gif);
+    background-size: cover;
+    background-position: center;
+
+    transition: all;
+    transition-delay: 0.2s;
+    transition-duration: 0.9s;
 }
+
+#profile-container:hover {
+    cursor: pointer;
+    width: 300px;
+    border-radius: 0%;
+    background-image: url(./images/profile.jpg);
+    border-color: lime;
+    box-shadow: 2px 2px 5px lightgrey;
+    /* transform: rotate(360deg); */
+}
+
+
+/* .header img{
+    max-width: 300px;  
+    transition-property: all;
+} */
+
+
+
 
 .header .container{
 
@@ -130,6 +175,7 @@ ul{
 .box i{
     margin-right: 15px;
 }
+
 
 @media(max-width: 768px){
     .header .container{

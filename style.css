@@ -134,7 +134,8 @@ ul{
     background-image: url(./images/profile.jpg);
     border-color: lime;
     box-shadow: 2px 2px 5px lightgrey;
-    /* transform: rotate(360deg); */
+    transform: rotateY(180deg);
+    
 }
 
 

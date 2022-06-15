@@ -24,14 +24,6 @@ body{
     color: transparent;
 }
 
-/* site-name */
-/* #site-name {
-    background-image: url(images/stars.jpg);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-} */
-
 img{
     max-width: 100%;
 }
@@ -84,6 +76,13 @@ ul{
 
 .navbar a:hover{
     color: lightblue;
+    border: 1px solid lightgrey;
+    box-shadow: 4px 4px 5px #222,
+               -2px -2px 8px #fff,
+               inset 2px 2px 4px #fff,
+               inset -2px -2px 5px #333;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 .navbar ul li{
@@ -134,18 +133,10 @@ ul{
     background-image: url(./images/profile.jpg);
     border-color: lime;
     box-shadow: 2px 2px 5px lightgrey;
+    
     transform: rotateY(180deg);
     
 }
-
-
-/* .header img{
-    max-width: 300px;  
-    transition-property: all;
-} */
-
-
-
 
 .header .container{
 
@@ -178,6 +169,17 @@ ul{
 }
 
 
+@media(max-width: 1080px){
+    .header .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+
+
+
+
 @media(max-width: 768px){
     .header .container{
         flex-direction: column;
@@ -187,7 +189,8 @@ ul{
     }
 
     .boxes .container{
-        display: block;
+        /* display: block; */
+        flex-direction: column;
         text-align: center;
     }
 }

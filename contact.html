@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peng Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/Peng-icon.webp" />
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar"> 
+        <div class="container">
+            <div class="logo">Pengcheng Xu</div>
+            <ul>
+                <li> <a href="index.html" >Home</a> </li>
+                <li> <a href="#" class="active">Contact</a> </li>
+                <li> <a href="./projects/visSys/index.html">Projects</a> </li>
+            </ul>
+        </div>
+    </nav><!-- /nav-->
+
+    <header class="header">
+        <div class="container">
+            <div id="contactBox">
+                <h1>Let's <span id="site-name">Reaching out!</span></h1>
+                <p>I'm open to all new stuff and people. </p><br />
+                <p>Below is the contact page, feel free to use it when needed. :p </p><br />
+                <form action="mailto:pcxu@bu.edu" method="get" enctype="text/plain" class="contact-form">
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <label for="username">Name: </label><input type="text" id="username" name="Name" required placeholder="Your Name"> <br><br>
+                        <label for="useremail">Email: </label> <input type="email" id="useremail" name="Email" required placeholder="Your Email"> <br><br>
+                        <label for="textbox">Message: </label> 
+                        <textarea name="message" id="textbox" cols="30" rows="10" maxlength="150" placeholder="Leave your message here" required></textarea> <br><br>
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="contactImg-container">
+                <!-- <img src="./images/contact-me.png" alt="" id="contact-img"> -->
+            </div>
+        </div>
+    </header><!-- /header -->
+
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <h2><i class="fa-brands fa-gratipay"></i> Like</h2>
+                <p>
+                    Give a thumbup if you like it.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2><i class="fa-solid fa-share"></i> Share</h2>
+                <p>
+                    Share with others.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2><i class="fa-brands fa-leanpub"></i> Learn</h2>
+                <p>
+                    Progess together during the journey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

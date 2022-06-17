@@ -252,7 +252,7 @@ header .project-title h2 {
 }
 
 .project-collection-box {
-    width: 95vw;
+    width: auto;
     max-width: 800px;
     height: auto;
     background-color: #f1f3f6;
@@ -397,8 +397,9 @@ progress {
     display: flex;
     flex-direction: column;
 }
-.project-des-link a {
-    align-self: center;
+.project-des-link {
+    display: flex;
+    align-self: end;
 }
 
 .title {
@@ -449,7 +450,7 @@ progress {
         grid-auto-rows: 400px;
     }
     .project-img {
-        margin: 10px 80px;
+        margin: 15px;
     }
     .project-description .subtitle {
         max-width: 45ch;

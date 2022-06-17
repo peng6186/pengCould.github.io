@@ -7,6 +7,12 @@
     padding: 0;
 }
 
+:root {
+    --purple: #5843be;
+    --orange: #ffa067;
+    --red: #fe7066;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -226,6 +232,43 @@ fieldset input[type='submit'] {
     text-align: center;
 }
 
+header .project-title h2 {
+    font-size: 4em;
+    background-image: url(./images/flame.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-collection-box {
+    width: 95vw;
+    max-width: 800px;
+    height: 400px;
+    background-color: #f1f3f6;
+    border: 1px solid limegreen;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6),
+    -3px -3px 6px rgba(255, 255, 255, 0.4);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-auto-rows: auto; */
+    grid-auto-flow: row;
+    /* gap: 10px; */
+
+}
+.project-items {
+    border: 1px solid lightgrey;
+}
+
 /** end -> header settings */
 
 /** section settings */
@@ -248,25 +291,147 @@ fieldset input[type='submit'] {
     margin-right: 15px;
 }
 
+.categoryBox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    /* height: 200px;  */
 
-@media(max-width: 992px){
-    .header .container{
-        flex-direction: column;
-        padding: 20px;
-        
-    }
+}
+
+.category-Per-Img-Word{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.categoryBox img {
+    width: 50px;
+}
+.category-Per-Img-Word span {
+    font-weight: 900;
+    font-size: larger;
+}
+
+#IoT .numPercent {
+    color: var(--purple);
+    font-size: 1.4em;
+}
+
+#Network .numPercent {
+    color: var(--orange);
+    font-size: 1.4em;
+}
+
+#ML .numPercent {
+    color: var(--red);
+    font-size: 1.4em;
+}
+
+.categoryProgress {
+    display: flex;
+    justify-content: center;
+}
+
+progress {
+    -webkit-appearance: none;
+}
+#IoT progress::-webkit-progress-value {
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+
+#IoT progress::-webkit-progress-bar {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#Network progress::-webkit-progress-value {
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+#Network progress::-webkit-progress-bar {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#ML progress::-webkit-progress-value {
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+
+#ML progress::-webkit-progress-bar {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+    
+.project-items {
+    display: grid;
+    grid-template-rows: 6fr 2fr;
+    position: relative;
+}
+
+#project-1 .project-img {
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    background-image: url(./images/vis.webp);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+#project-2 .project-img {
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    background-image: url(./images/IoT-1.webp);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+.project-description {
+    padding: 10px;
+}
+.project-des-link a {
+    position: absolute;
+    right: 10px;
+}
+
+.title {
+    font-weight: 600;
+    /* font-size: 1.1em; */
+    color: #222222;
+    /* padding: 5px 5px; */
+
+}
+.subtitle {
+    font-weight: 400;
+    color: #b9c2d1;
+    font-size: 0.9em;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 25ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+   
 }
 
 
 
 
+/* Set media queries to diff screen size and print (i.e. responsive design) */
+@media(max-width: 992px){
+    .header .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
 
 @media(max-width: 768px){
     .header .container{
         flex-direction: column;
         padding-top: 20px;
         text-align: center;
-
     }
 
     .boxes .container{
@@ -274,4 +439,23 @@ fieldset input[type='submit'] {
         flex-direction: column;
         text-align: center;
     }
+    .project-collection-box{
+        grid-template-columns: 1fr;
+        height: 800px;
+        grid-auto-rows: 400px;
+    }
+    .project-img {
+        margin: 10px 80px;
+    }
+    .project-description .subtitle {
+        max-width: 45ch;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: #000000;
+    }
+ 
 }
